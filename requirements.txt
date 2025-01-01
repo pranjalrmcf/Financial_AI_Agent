@@ -1,0 +1,13 @@
+phidata  
+streamlit
+yfinance
+numpy
+requests
+plotly
+groq
+duckduckgo-search
+python-dotenv
+googlesearch-python
+pycountry
+packaging
+openai
