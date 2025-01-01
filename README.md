@@ -1,95 +1,99 @@
 Check out the app - https://financialagentpranjalrmcf7.streamlit.app/
 
-Stock Market AI Assistant 📈
-A powerful Streamlit-based web application that combines real-time stock market analysis with AI-powered insights. This tool integrates technical analysis, fundamental metrics, and interactive AI chat capabilities to provide comprehensive stock market intelligence.
-Features
-Stock Analysis
+# Agentic AI Application for Financial Analysis
 
-Real-time Stock Data: Fetch and display current market data for any publicly traded stock
-Technical Analysis:
+This project is an advanced **Agentic AI application** that brings together fundamental and technical financial analysis. It leverages **Phidata** for managing infrastructure and deployment, **Groq** for AI capabilities, and integrates interactive visualizations and chatbot functionalities for an enhanced financial decision-making experience.
 
-Price charts with candlestick patterns
-Volume analysis
-Multiple technical indicators (RSI, MACD, Bollinger Bands, etc.)
-Moving averages (20-day and 50-day SMA)
+## Features
 
-Fundamental Analysis
+### **1. Fundamental Analysis**
+- Market Capitalization
+- Price-to-Earnings (P/E) Ratio
+- Earnings Per Share (EPS)
+- Revenue (TTM)
+- Gross Profit (TTM)
+- Net Income (TTM)
+- Operating Cash Flow (TTM)
+- Dividend Yield
+- 52-Week High/Low
+- Return on Assets (ROA) and Return on Equity (ROE)
+- Debt-to-Equity Ratio
 
-Market capitalization
+### **2. Technical Analysis**
+- Relative Strength Index (RSI)
+- Moving Average Convergence Divergence (MACD)
+- Bollinger Bands (Upper and Lower)
+- Average True Range (ATR)
+- Stochastic Oscillator (%K)
+- Simple Moving Averages (SMA) for 50 and 200 periods
+- Exponential Moving Averages (EMA)
 
-P/E ratio
+### **3. Interactive Visualizations**
+- Candlestick Charts for price analysis
+- Volume Charts for trading activity
+- Moving averages and Bollinger Bands overlays
 
-Revenue metrics
+### **4. Chatbot Integration**
+- An AI-powered chatbot for personalized financial advice
+- Responds to queries like "Should I buy MSFT stock?"
+- Provides actionable insights and explains financial metrics
 
-Cash flow analysis
+### **5. Backend & Infrastructure**
+- **Phidata** for managing infrastructure and enabling seamless integration of AI agents.
+- **Groq AI** for handling multi-agent architecture and advanced AI computations.
 
-Dividend information
+## Tech Stack
+- **Frontend:** Streamlit for creating a responsive and interactive web app.
+- **Backend:** Phidata for infrastructure management.
+- **AI:** Groq for implementing Agentic AI architecture.
+- **Visualization:** Plotly for interactive financial charts.
+- **Data:** YFinance for fetching real-time financial data.
 
-EPS data
+## Setup Instructions
 
+### Prerequisites
+1. Python 3.8+
+2. API Key for **Groq** (Add to `.env` file as `GROQ_API_KEY`)
+3. Required Python libraries:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-AI-Powered Insights
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd <repository-name>
+   ```
 
-Multi-agent system utilizing:
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Web Search Agent for market news and trends
+3. Set up environment variables:
+   Create a `.env` file and add your Groq API key:
+   ```env
+   GROQ_API_KEY=your_api_key_here
+   ```
 
-Financial AI Agent for stock-specific analysis
+4. Run the application:
+   ```bash
+   streamlit run app.py
+   ```
 
-Comprehensive AI Agent combining multiple data sources
+5. Open your browser and navigate to:
+   ```
+   http://localhost:8501
+   ```
 
+## Usage
+- Use the search bar to enter stock tickers or company names.
+- Navigate between tabs for **Fundamental Analysis**, **Technical Analysis**, and **Charts**.
+- Interact with the chatbot in the sidebar for financial advice.
+- Visualize real-time market data with detailed charts and overlays.
 
-Interactive chat interface for custom queries
-
-Historical chat tracking
-
-Prerequisites
-
-
-Access the web interface through your browser (typically at http://localhost:8501)
-Enter a stock ticker symbol in the sidebar
-Select your preferred time period for analysis
-Use the AI chatbot to ask questions about the stock or market conditions
-
-Features Breakdown
-
-Charts and Visualization
-
-Interactive candlestick charts
-
-Volume analysis
-
-Moving averages overlay
-
-Technical indicator visualization
-
-Technical Indicators
-
-Relative Strength Index (RSI)
-
-Average True Range (ATR)
-
-Bollinger Bands
-
-Simple Moving Averages (SMA)
-
-Exponential Moving Averages (EMA)
-
-Stochastic Oscillator
-
-
-AI Capabilities
-
-Natural language processing for stock-related queries
-
-Real-time web search integration
-
-Financial data analysis
-
-Combined insights from multiple AI agents
-
-
-Powered by Groq's LLM models
-Built with Streamlit
-Uses yfinance for market data
-Integrates phi for AI agent functionality
+## Future Enhancements
+- Add multi-language support for global users.
+- Incorporate more financial metrics and ratios.
+- Enable advanced AI-driven portfolio recommendations.
